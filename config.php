@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Kolkata');
 
-$hostname = "localhost";
+$hostname = "host.docker.internal";
 $username = "root";
 $password = "root";
 $database = "db_eval";
