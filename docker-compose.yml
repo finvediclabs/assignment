@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  php-app:
+    build: .
+    container_name: online_php_app
+    ports:
+      - "8080:80"
+    environment:
+      - DB_HOST=172.17.0.1
+      - DB_NAME=db_eval
+      - DB_USER=root
+      - DB_PASS=
+    volumes:
+      - ./:/var/www/html/
+    restart: always
